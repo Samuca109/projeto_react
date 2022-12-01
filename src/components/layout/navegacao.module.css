@@ -1,0 +1,30 @@
+nav{
+    background-color: black;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+     /*Separa as palavras entre si*/
+     width: 100vw;}
+
+.ul{
+    list-style: none; /*Tira as bordas do lado dos li*/
+    align-items: center;
+    display: flex;
+}
+
+.link{ 
+    margin: 10px;
+}
+
+.link a { /* Altera o <Link> com o a mesmo normal */
+    color: aliceblue;
+    text-decoration: none;
+    
+}
+
+a:hover{
+    color: yellow;
+   
+}
+
+

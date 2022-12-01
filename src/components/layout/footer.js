@@ -4,7 +4,7 @@ import style from './footer.module.css'
 function Footer(){
     return(
         <footer className={style.footer}>
-            <ul>
+            <ul className={style.ul}>
                 <li><FaFacebook /></li>
                 <li><FaInstagram /></li>
                 <li><FaLinkedin /></li>

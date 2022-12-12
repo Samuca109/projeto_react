@@ -10,7 +10,7 @@ function Navegacao(){
         </Link>
       <ul className={style.ul}>
         <li className={style.link}>
-        <Link to="/home">Home</Link>
+        <Link to="/">Home</Link>
         </li>
         <li className={style.link}>
         <Link to="/empresa">Empresa</Link> 

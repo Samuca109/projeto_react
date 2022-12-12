@@ -1,0 +1,18 @@
+.btn{
+    background-color: black;
+    color: aliceblue;
+    margin: auto;
+    padding: 5px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.btn:hover {
+    color: #ffbb33;
+}
+
+/*
+    * Quando nao se tem a tag <a> se coloca so a class:hover para poder fazer a transição
+*/
+

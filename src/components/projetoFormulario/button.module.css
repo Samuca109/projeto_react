@@ -1,0 +1,13 @@
+.button{
+      color: whitesmoke;
+      font-weight: bolder;
+      padding: 0.5em;
+      transition: 0.5s;
+      border-radius: 10px;
+      background-color: black;
+      cursor: pointer;
+}
+
+.button:hover{
+      color: #ffbb33;
+}

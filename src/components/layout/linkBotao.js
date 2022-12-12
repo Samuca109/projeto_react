@@ -1,8 +1,9 @@
 import { Link } from 'react-router-dom'
+import Style from './linkBotao.module.css'
 
 function LinkBotao({ to, text }){
     return (
-    <Link to={to}>
+    <Link className={Style.btn} to={to}>
         {text}
     </Link>
     )

@@ -8,7 +8,7 @@ function Navegacao(){
         <Link>
               <img src={Logo} alt="Logo da foto" />
         </Link>
-      <ul class={style.ul}>
+      <ul className={style.ul}>
         <li className={style.link}>
         <Link to="/home">Home</Link>
         </li>

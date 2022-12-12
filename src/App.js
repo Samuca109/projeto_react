@@ -29,14 +29,15 @@ function App() {
           </Route>
           <Route path="projetos" element={<Projeto />}>
           </Route>
+          <Route path="novoprojeto" element={<NovoProjeto />}>
+          </Route>
         </Routes>
+        <Home />
         <Footer />
        </Router>
+     
   );
 }
+//O route sempre tem que estar no app.js tambem que é a pagina principal onde vai ser mostrado os arquivos.
 
-/*  Novo projeto que esta em comentario mas ja tem o arquivo dele * 
-*<Route path="novoprojeto" element={<NovoProjeto />}>
-  </Route>
- */
 export default App;

@@ -1,0 +1,12 @@
+.textNome{
+    font-weight: bolder;
+}
+
+.input{
+        height: 25px;
+        padding: 5px;
+        width: 60%;
+        margin: 1em;
+        text-align: center;
+        border-radius: 10px;
+}

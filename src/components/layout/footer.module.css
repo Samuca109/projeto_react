@@ -19,6 +19,13 @@ p{
     color: aliceblue;
 }
 
+.li{
+    cursor: pointer;
+    transition: 1s;
+}
+li:hover{
+    color: rgb(139, 139, 2);
+}
 /* Gruda o footer quando nao tem conteudo 
    position: relative;
     max-height: 70vh;

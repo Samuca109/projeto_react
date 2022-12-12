@@ -12,7 +12,7 @@ import Projeto from './components/paginas/projetos';
 //Footer
 import Footer from './components/layout/footer';
 import Container from './components/layout/container';
-
+import Img from './img/imagemDolar.svg'
 
 // o Switch foi substituido pelo Routes
 
@@ -31,8 +31,8 @@ function App() {
           </Route>
           <Route path="novoprojeto" element={<NovoProjeto />}>
           </Route>
+         
         </Routes>
-        <Home />
         <Footer />
        </Router>
      

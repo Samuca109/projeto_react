@@ -1,11 +1,14 @@
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import { Link } from 'react-router-dom'
 import Style from './linkBotao.module.css'
 
-function LinkBotao({ to, text }){
+function LinkBotao({ path, text }){
     return (
-    <Link className={Style.btn} to={to}>
+       
+    <Link className={Style.btn} path={path}>
         {text}
     </Link>
+  
     )
 }
 

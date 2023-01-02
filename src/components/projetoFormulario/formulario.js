@@ -1,3 +1,5 @@
+import { useState, userEffect } from 'react'
+
 import Style from './formulario.module.css'
 import Input from './input'
 import Select from './select'
@@ -6,6 +8,25 @@ import Button from './button'
 // Vou chamar por fora todos esses para poder ter menos linha de codigo e chama-los para ter um lugar especifico para poder altera-los
 
 function Formulario({ buttonText }){
+    const [categorias, setCategorias] = useState([])
+
+    userEffect(() => {
+        fetch("http://localhost:5000/categorias", {
+            method: "GET", 
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        })
+        /**
+         * Aqui vai acontecer a tranformaçao pro json para lancar ele la no json
+         */
+        .then((resp) => resp.json())
+        .then((data) => {
+            setCategorias(data)
+        }) 
+    .catch((err) => console.log(err))
+}, [])
+
     return(
         <form className={Style.form}>
             <div>
@@ -16,7 +37,7 @@ function Formulario({ buttonText }){
                 <Input type="Number" text="Orçamento do Projeto" placeholder='digite o valor' />
             </div>
          
-                <Select name="name"  text="Insira a categoria" />
+                <Select name="categoria_id"  text="Insira a categoria" options={categorias} />
       
         <div>
             <Button type='submit' text={buttonText} name='name' />

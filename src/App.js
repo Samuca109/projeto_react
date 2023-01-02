@@ -31,7 +31,6 @@ function App() {
           </Route>
           <Route path="novoprojeto" element={<NovoProjeto />}>
           </Route>
-         
         </Routes>
         <Footer />
        </Router>

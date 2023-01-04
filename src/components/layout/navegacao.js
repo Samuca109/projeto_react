@@ -1,7 +1,7 @@
 import style from './navegacao.module.css'
 import { Link } from 'react-router-dom'
 import Logo from '../../img/costs_logo.png'
-
+import Teste from '../paginas/teste'
 function Navegacao(){
     return(
      <nav>
@@ -21,6 +21,11 @@ function Navegacao(){
         <li className={style.link}>
           <Link to="projetos">
             Projetos
+          </Link>
+        </li>
+        <li>
+          <Link to='teste'>
+                testes
           </Link>
         </li>
       </ul> 

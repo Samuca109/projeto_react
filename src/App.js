@@ -8,6 +8,7 @@ import NovoProjeto from './components/paginas/novoProjeto'
 import './App.css';
 import Navegacao from './components/layout/navegacao';
 import Projeto from './components/paginas/projetos';
+import Teste from './components/paginas/teste';
 
 //Footer
 import Footer from './components/layout/footer';
@@ -31,6 +32,7 @@ function App() {
           </Route>
           <Route path="novoprojeto" element={<NovoProjeto />}>
           </Route>
+          <Route path='teste' element={<Teste />} />
         </Routes>
         <Footer />
        </Router>
